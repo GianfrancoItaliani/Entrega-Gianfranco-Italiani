@@ -49,6 +49,140 @@ span{
 #check{
     display: none;
 }
+/* BANNER */
+#banner{
+    padding: 0 50px;
+    background-image: url(./img/Banner.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before{
+    content:'' ;
+    background: rgba(50, 50, 59, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #5A6650 ;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-empezar:hover{
+    background: #59A96A;
+}
+
+/* LUGARES */
+#lugares{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#lugares img{
+    border-radius: 100%;
+}
+
+#lugares div{
+    padding: 30px 30px;
+}
+
+#lugares h4{
+    color: #000000;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#lugares div p{
+    color: #7C7A7A;
+    font-size: 18px;
+}
+
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #59A96A;
+    padding: 10px 30px;
+    border: 3px solid #59A96A;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all.4s;
+}
+
+.boton-saber-mas:hover{
+    background: #59A96A;
+    color: #fff;
+}
+
+/* ICONO */
+
+#iconos{
+    padding: 0px 50px;
+    background: rgba(50, 50, 59, 0.6);
+}
+
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255,255,255, 0.2);
+    color: #004643;
+}
+
+#icono-dinero{
+    border: none;
+}
+
+
+.contenido-iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 15px;
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
 
 /* RESPONSIVE */
 @media(max-width: 768px){
@@ -82,4 +216,21 @@ span{
     #check:checked ~ .menu{
         right: 0;
     }
+
+    /* LUGARES */
+
+    #lugares{
+        flex-direction: column;
+    }
+
+    /* ICONOS */
+
+    .contenido-iconos{
+        flex-direction: column;
+    }
+
+    .contenido-iconos div{
+        border: none;
+    }
 }
+
