@@ -49,7 +49,7 @@ span{
 #check{
     display: none;
 }
-/* BANNER */
+/* BANNERS */
 #banner{
     padding: 0 50px;
     background-image: url(./img/Banner.jpg);
@@ -97,6 +97,112 @@ span{
     background: #59A96A;
 }
 
+/* BANNER SERVICIO */
+
+#banner-servicios{
+    padding: 0 50px;
+    background-image: url(img/Banner-servicios.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-servicios::before{
+    content:'' ;
+    background: rgba(50, 50, 59, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner-servicios{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner-servicios h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner-servicios h3 span{
+    font-weight: 600;
+}
+
+/* BANNER LUGARES */
+
+#banner-lugares{
+    padding: 0 50px;
+    background-image: url(./img/Banner-lugares.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-lugares::before{
+    content:'' ;
+    background: rgba(50, 50, 59, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner-lugares{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner-lugares h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner-lugares h3 span{
+    font-weight: 600;
+}
+
+/* BANNER NOSOTROS */
+#banner-nosotros{
+    padding: 0 50px;
+    background-image: url(./img/Banner-nosotros.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-nosotros::before{
+    content:'' ;
+    background: rgba(50, 50, 59, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner-nosotros{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner-nosotros h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner-nosotros h3 span{
+    font-weight: 600;
+}
 /* LUGARES */
 #lugares{
     padding: 50px 50px;
@@ -182,6 +288,137 @@ span{
     padding-bottom: 50px;
 }
 
+/* FOOTER */
+
+
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #004643;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #00c3ff;
+}
+
+/* FORMS SERVICIO */
+
+#servicios{
+    background: #7C7A7A;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+#servicios h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#servicios form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input,
+form textarea{
+    background: #004643;
+    border-radius: 10px;
+    border: 2px solid #59A96A;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #0b681f;
+    box-shadow: 0 0 0 3px #0b681f;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 2px solid #59A96A;
+    color: #fff;
+    transition: 0,4s;
+}
+
+.boton-formulario .boton-saber-mas:hover{
+    background: #004643;
+}
+
 
 
 /* RESPONSIVE */
@@ -232,5 +469,12 @@ span{
     .contenido-iconos div{
         border: none;
     }
-}
 
+    /* FORMULARIO SERVICIO */
+
+    .datos-form{
+        flex-direction: column;
+    }
+
+
+}
